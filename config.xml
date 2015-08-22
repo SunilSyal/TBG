@@ -19,7 +19,7 @@
     <preference name="orientation" value="portrait" />
 
     <preference name="AutoHideSplashScreen" value="false" />
-    <preference name="SplashScreenDelay" value="4000" />
+    <preference name="SplashScreenDelay" value="400" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
 
     <content src="index.html" />
