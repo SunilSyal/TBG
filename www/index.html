@@ -9,28 +9,150 @@
     	padding:0px;
     }
     body{
-        background-image: url("logo.png");
-        background-repeat:no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        background-color: #fff;
-        background-size: 50%;
     }
-    	#myFrame{
-    		width:100%;
-    		height:100%;
-            top:0px;
-            left:0px;
-    		border:none;
-            overflow-x: hidden; 
-            position: fixed;
-    	}
+    
+ 
+a.shortc-button{
+    width: 45%;
+
+    text-align: right;
+}
+
+a.shortc-button.medium {
+    font-size: 14px;
+    height: 45px;
+    line-height: 45px;
+     
+}
+
+a.shortc-button.red {
+    background: #e74c3c;
+}
+
+a.shortc-button.blue {
+    background: #3498db;
+}
+
+a.shortc-button.custom-float-left {
+    float: left;
+}
+a.shortc-button.custom-float-right {
+    float: right;
+}
+
+a.shortc-button {
+    border: none;
+    cursor: pointer;
+    padding: 0 7px;
+    display: inline-block;
+    margin: 10px 0 0;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    background: #bdc3c7;
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 10px;
+    height: 25px;
+    line-height: 25px;
+    opacity: .9;
+    overflow: hidden;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.lazy-enabled #main-content .post-thumbnail.tie-appear, .lazy-enabled #theme-footer div.post-thumbnail.tie-appear, .lazy-enabled #main-content img.tie-appear, .lazy-enabled #featured-posts.tie-appear {
+    opacity: 1;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.entry img {
+    max-width: 100%;
+    height: auto;
+}
+
+.custom-site-link img {
+    position: absolute;
+    right: top;
+    bottom: 0px;
+    left: 0px;
+    width: 105px;
+    border-radius: 0px 10px 0px 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+img, img.size-auto, img.size-full, img.size-large, img.size-medium, .attachment img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a.shortc-button:hover {
+    opacity: 1;
+}
+
+a.shortc-button:active {
+    top: 1px;
+}.links-holder{
+    padding:1rem;
+}
+
+header ul {
+    margin: 0 auto;
+    background: #2d2d2d;
+    box-shadow: inset -1px -5px 0px -1px #393939;
+    min-height: 52px;
+    border-bottom: 5px solid #F88C00;
+}
+
+header ul li {
+    font-size: 13px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    border: 1px solid #222222;
+    border-width: 0 0 0 1px;
+    height: 42px;
+}
+
+header ul li a {
+    display: inline-block;
+    height: 42px;
+    position: relative; 
+    line-height: 47px;
+    color: #ddd;
+    padding: 0 10px;
+    border: 1px solid #383838;
+    border-width: 0 0 0 1px;
+}
     </style>
+
 
 </head>
 
 <body>
-    <iframe id="myFrame" src="http://thebestgadget.com/quick-links/"></iframe>
+    <header>
+        <h1>One Stop Shop</h1>
+        <ul>
+            <li><a href="javascript:void(0)">One Stop Shop</a></li>
+        </ul>
+        
+    </header>
+
+
+    <section class="links-holder">
+        <a class="shortc-button medium red custom-float-left custom-site-link" onclick="window.open('http://www.amazon.in/b?_encoding=UTF8&amp;camp=3626&amp;creative=24790&amp;linkCode=ur2&amp;node=3561110031&amp;site-redirect=&amp;tag=thebestgadget-21','_system', 'location=yes')" href="javascript:void(0)"><img src="amazon.jpg" alt="In Association with Amazon.in" border="0" class="tie-appear">Go</a>
+
+        <a class="shortc-button medium blue custom-float-right custom-site-link" onclick="window.open('http://affiliate.flipkart.com/install-app?affid=shalinita','_system', 'location=yes')" href="javascript:void(0)"><img src="flipkart.jpg" alt="In Association with Flipkart" border="0" class="tie-appear">Go</a>
+
+    </section>
 </body>
 
 </html>
