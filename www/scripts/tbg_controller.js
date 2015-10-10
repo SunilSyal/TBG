@@ -4,8 +4,9 @@ TBG.controller('tbg__main-ctrl', [ 'tbg_loader', 'tbg__main_service', function(t
     var self = this;
 
     self.config = {
-    	isDev : false,
+    	isDev : true,
     	jsonPath : 'mock/',
+    	imagesPath : 'images/',
     	serverPath : 'http://thebestgadget.com/TBG/',
     	siteJsonListFileName : 'siteList.json',
     	saleJsonListFileName : 'saleList.json'
@@ -13,16 +14,21 @@ TBG.controller('tbg__main-ctrl', [ 'tbg_loader', 'tbg__main_service', function(t
 
     function init(){
     	setJsonPath();
-    	tbg_loader.loadFile(self.jsonPath + self.config.siteJsonListFileName, proceed);
-    	tbg_loader.loadFile(self.jsonPath + self.config.saleJsonListFileName, proceed);
+    	tbg_loader.loadFile(self.jsonPath + self.config.siteJsonListFileName, proceedSites);
+    	tbg_loader.loadFile(self.jsonPath + self.config.saleJsonListFileName, proceedSale);
     }
 
     function setJsonPath(){
     	self.jsonPath = self.config.isDev ? self.config.jsonPath : self.config.serverPath + self.config.jsonPath;
+    	self.imagesPath = self.config.isDev ? self.config.imagesPath : self.config.serverPath + self.config.imagesPath;
     }
 
-    function proceed(response){
-    	tbg__main_service.addObject(response);
+    function proceedSites(response){
+    	tbg__main_service.addObject(response, 'sites', self.imagesPath);
+    }
+
+    function proceedSale(response){
+    	tbg__main_service.addObject(response, 'sale', self.imagesPath);
     }
 
     self.name ="sunil";
@@ -32,7 +38,7 @@ TBG.controller('tbg__main-ctrl', [ 'tbg_loader', 'tbg__main_service', function(t
     	navigator.app ? navigator.app.loadUrl(link, {openExternal : true}) : window.open(link);
     }
 
-    self.breadcrumb = "Some text here."
+    self.breadcrumb = "Top Shopping Sites"
 
     self.getSiteList = tbg__main_service.getSiteList;
 
@@ -53,18 +59,32 @@ TBG.factory('tbg__main_service', function() {
   	return objRef.saleList;
   }
 
-  function addObject(obj){
+  function addObject(obj, dataType, path){
   	for(var i in obj){
   		objRef[i] = obj[i];
   	}
 
-  	setDate();
+  	switch (dataType){
+  		case 'sites':
+  			setPaths(path);
+  		break;
+  		case 'sale':
+  			setDate();
+  		break;
+  	}
+  }
+
+  function setPaths(path){
+  	console.log(path)
+  	var len =  objRef.siteList.length;
+
+  	for(var i=0; i< len; i++){
+  		var ref = objRef.siteList[i];
+  		ref.img = path + ref.img;
+  	}
   }
 
   function setDate(){
-
-  	if(!objRef.saleList) return;
-
   	var len =  objRef.saleList.length,
   	today = new Date();
   	today = today.getTime();

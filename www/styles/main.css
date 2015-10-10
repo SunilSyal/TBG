@@ -16,7 +16,7 @@ html {
 }
 
 main{
-	margin-bottom: 150px;
+	margin-bottom: 182px;
 	overflow: hidden;
 }
 
@@ -32,7 +32,7 @@ main{
 footer{
 	position: fixed;
 	bottom: 0px;
-	height: 150px;
+	height: 182px;
 }
 
 header{
@@ -66,8 +66,9 @@ ul {
 }
 
 .site-list > li a {
-	display: inline-block;
+	display: block;
 	text-decoration: none;
+	padding: 10px 0px 0px;
 }
 
 .site-list > li img {
@@ -84,12 +85,12 @@ ul {
 	margin-top: 7px;
     padding: 0px 5px;
     font-size: 0.8rem;
-    height: 2rem;
+    height: 2.1rem;
     overflow: hidden;
 }
 
 footer ul {
-	height: 120px;
+	height: 150px;
 	overflow-y: scroll;
 }
 
@@ -129,7 +130,7 @@ footer ul li:last-child{
 	float: left;
 }
 .div-date{
-	width: 100px;
+	width: 110px;
 }
 
 .div-event{
@@ -146,4 +147,8 @@ footer ul li:last-child{
 
 .color-red {
 	color: red;
+}
+
+.xs-font{
+	font-size: 0.6rem;
 }
