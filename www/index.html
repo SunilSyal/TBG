@@ -4,30 +4,42 @@
 <head>
     <script src="cordova.js"></script>
     <script src="scripts/angular.min.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
-<body>
+<body ng-app="TBG" ng-controller="tbg__main-ctrl as ctrl">
     <header>
-        <h1>One Stop Shop</h1>
+        <h1>Ghaint Shop</h1>
         <ul>
             <li><a href="javascript:void(0)">One Stop Shop</a></li>
         </ul>
-        
     </header>
 
-    <main ng-app="TBG" ng-controller="tbg__main-ctrl as ctrl">
-            <ul>
+    <main>
+            <ul class='site-list'>
                 <li ng-repeat="item in ctrl.getSiteList()">
                     <a 
-                    class="shortc-button medium red custom-float-left custom-site-link" 
-                    ng-click="ctrl.openWindow(item.target)"
+                    ng-click="ctrl.openWindow(item.tgt)"
                     href="javascript:void(0)">
-                        <img src="amazon.jpg" alt="In Association with Amazon.in" border="0" class="tie-appear">
-                        Go
+                        <img src="{{item.img}}" alt="{{item.name}}">
+                        <p>{{item.name}}</p>
                     </a>
                 </li>
             </ul>
     </main>
+
+    <footer class="full-width">
+        <h3>Events and Sales</h3>
+        <ul class='sale-list full-width'>
+                <li ng-repeat="item in ctrl.getSaleList()">
+                    <a 
+                    ng-click="ctrl.openWindow(item.tgt)"
+                    href="javascript:void(0)">
+                        <p>{{item.name}}</p>
+                    </a>
+                </li>
+            </ul>
+    </footer>
 
     <script src="scripts/tbg_controller.js"></script>
 </body>

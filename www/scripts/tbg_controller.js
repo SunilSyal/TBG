@@ -5,33 +5,142 @@ TBG.controller('tbg__main-ctrl', ['tbg__main_service' , function(tbg__main_servi
     self.name ="sunil";
 
     self.openWindow = function (link){
-    	navigator.app.loadUrl("http://google.com", {openExternal : true});
+ 
+    	navigator.app ? navigator.app.loadUrl(link, {openExternal : true}) : window.open(link);
     }
 
     self.getSiteList = tbg__main_service.getSiteList;
+
+    self.getSaleList = tbg__main_service.getSaleList;
 }]);
 
 
 TBG.factory('tbg__main_service', function() {
-  var objRef = [
+  var objRef = {};
+
+  objRef.siteList = [
   	{
-  		target: "http://www.google.com"
+  		img: 'images/flipkart.png',
+  		tgt: "http://www.google.com",
+  		name: 'Amazon'
+  	},
+  	{
+  		img: 'images/flipkart.png',
+  		tgt: "http://www.google.com",
+  		name: 'Fashion and Something'
+  	},
+  	{
+  		img: 'images/flipkart.png',
+  		tgt: "http://www.google.com",
+  		name: 'FlipKart'
+  	},{
+  		img: 'images/flipkart.png',
+  		tgt: "http://www.google.com",
+  		name: 'Amazon'
+  	},
+  	{
+  		img: 'images/flipkart.png',
+  		tgt: "http://www.google.com",
+  		name: 'Fashion and Something'
+  	},
+  	{
+  		img: 'images/flipkart.png',
+  		tgt: "http://www.google.com",
+  		name: 'FlipKart'
+  	},{
+  		img: 'images/flipkart.png',
+  		tgt: "http://www.google.com",
+  		name: 'Amazon'
+  	},
+  	{
+  		img: 'images/flipkart.png',
+  		tgt: "http://www.google.com",
+  		name: 'Fashion and Something'
+  	},
+  	{
+  		img: 'images/flipkart.png',
+  		tgt: "http://www.google.com",
+  		name: 'FlipKart'
+  	},
+  	{
+  		img: 'images/flipkart.png',
+  		tgt: "http://www.google.com",
+  		name: 'FlipKart'
   	}
   ];
 
-  function updateLinks(){
-  	for(var i in objRef){
-  		objRef[i].finalTarget = "window.open('"+ objRef[i].target + "','_system', 'location=yes' )"
+  objRef.saleList = [
+  	{
+  		date:'Nov 21 - Nov 23',
+  		event: 'Sale',
+  		tgt: "http://www.google.com",
+  		name: 'Amazon'
+  	},
+  	{
+  		date:'Nov 21 - Nov 23',
+  		event: 'Sale',
+  		tgt: "http://www.google.com",
+  		name: 'Fashion and Something'
+  	},
+  	{
+  		date:'Nov 21 - Nov 23',
+  		event: 'Sale',
+  		tgt: "http://www.google.com",
+  		name: 'FlipKart'
+  	},{
+  		date:'Nov 21 - Nov 23',
+  		event: 'Sale',
+  		tgt: "http://www.google.com",
+  		name: 'Amazon'
+  	},
+  	{
+  		date:'Nov 21 - Nov 23',
+  		event: 'Sale',
+  		tgt: "http://www.google.com",
+  		name: 'Fashion and Something'
+  	},
+  	{
+  		date:'Nov 21 - Nov 23',
+  		event: 'Sale',
+  		tgt: "http://www.google.com",
+  		name: 'FlipKart'
+  	},{
+  		date:'Nov 21 - Nov 23',
+  		event: 'Sale',
+  		tgt: "http://www.google.com",
+  		name: 'Amazon'
+  	},
+  	{
+  		date:'Nov 21 - Nov 23',
+  		event: 'Sale',
+  		tgt: "http://www.google.com",
+  		name: 'Fashion and Something'
+  	},
+  	{
+  		date:'Nov 21 - Nov 23',
+  		event: 'Sale',
+  		tgt: "http://www.google.com",
+  		name: 'FlipKart'
+  	},
+  	{
+  		date:'Nov 21 - Nov 23',
+  		event: 'Sale',
+  		tgt: "http://www.google.com",
+  		name: 'FlipKart'
   	}
-  }
+  ];
 
   function getSiteList(){
-  	return objRef;
+  	return objRef.siteList;
+  }
+
+  function getSaleList(){
+  	return objRef.saleList;
   }
   
-  updateLinks();
   return {
-  	getSiteList: getSiteList
+  	getSiteList: getSiteList,
+  	getSaleList : getSaleList
   };
 });
 
