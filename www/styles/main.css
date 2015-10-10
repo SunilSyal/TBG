@@ -5,9 +5,24 @@
 	font-family: "Times New Roman", Georgia, Serif;
 }
 
-main{
-	margin-bottom: 100px;
+a{
+	text-decoration: none;
+	display: block;
 	overflow: hidden;
+}
+
+html {
+	    background-color: #f9f4ec;
+}
+
+main{
+	margin-bottom: 150px;
+	overflow: hidden;
+}
+
+.dark-background{
+	background-color: #333;
+	color: #CACACA;
 }
 
 .full-width {
@@ -17,25 +32,37 @@ main{
 footer{
 	position: fixed;
 	bottom: 0px;
-	height: 100px;
+	height: 150px;
 }
 
 header{
 	margin-bottom: 20px;
+	background-color: #f9f4ec;
 }
 
 ul {
 	list-style: none;
 }
 
+.logo{
+	max-width: 80%;
+    margin: 2% 10%;
+}
+
+.breadcrumb{
+    padding: 7px 10px;
+    border-bottom: 3px solid #E46A02;
+}
+
 .site-list > li {
 	width: 25%;
+	max-width: 120px;
 	float: left;
 	text-align: center;
 }
 
 .site-list > li {
-	height: 120px;
+	height: 110px;
 }
 
 .site-list > li a {
@@ -45,17 +72,78 @@ ul {
 
 .site-list > li img {
 	display: block;
-    width: 50px;
+    width: 45px;
     margin: 0px auto;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	border-radius: 5px;
 }
 
 .site-list > li p {
-	margin-top: 10px;
-	padding: 0px 5px;
-	font-size: 0.9rem;
+	margin-top: 7px;
+    padding: 0px 5px;
+    font-size: 0.8rem;
+    height: 2rem;
+    overflow: hidden;
 }
 
 footer ul {
-	height: 75px;
+	height: 120px;
 	overflow-y: scroll;
+}
+
+footer > p {
+	color: #F9F4EC;
+    padding: 7px 10px;
+    background-color: #E46A02;
+    -webkit-box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.5);
+	box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.5);
+}
+
+footer ul li{
+	border-bottom: 1px solid #292929;
+    border-top: 1px solid #484848;
+	padding: 10px;
+	overflow: hidden;
+}
+
+footer ul li:first-child{
+	border-top: none;
+}
+
+footer ul li:last-child{
+	border-bottom: none;
+}
+
+.light-color{
+	color: #CACACA;
+}
+
+.small-font{
+	font-size: 0.8rem;
+}
+
+.div-name{
+	float: left;
+}
+.div-date{
+	width: 100px;
+}
+
+.div-event{
+	float: right;
+}
+
+.color-green {
+	color: #13D413;
+}
+
+.color-amber {
+	color: #E4C204;
+}
+
+.color-red {
+	color: red;
 }

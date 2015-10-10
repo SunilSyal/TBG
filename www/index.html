@@ -9,10 +9,9 @@
 
 <body ng-app="TBG" ng-controller="tbg__main-ctrl as ctrl">
     <header>
-        <h1>Ghaint Shop</h1>
-        <ul>
-            <li><a href="javascript:void(0)">One Stop Shop</a></li>
-        </ul>
+        <img class="logo" src="images/logo.png"/>
+
+        <p class="breadcrumb dark-background" ng-bind="ctrl.breadcrumb"></p>
     </header>
 
     <main>
@@ -28,14 +27,37 @@
             </ul>
     </main>
 
-    <footer class="full-width">
-        <h3>Events and Sales</h3>
-        <ul class='sale-list full-width'>
-                <li ng-repeat="item in ctrl.getSaleList()">
+    <footer class="full-width dark-background">
+        <p>Events and Sales</p>
+        <ul class='sale-list full-width small-font'>
+                <li ng-repeat="item in ctrl.getSaleList() | orderBy:'Date(endDate)'" ng-if="item.date">
                     <a 
                     ng-click="ctrl.openWindow(item.tgt)"
                     href="javascript:void(0)">
-                        <p>{{item.name}}</p>
+                        <div class="div-name div-date light-color">{{item.date}}</div>
+                        <div class="div-name light-color">{{item.name}}</div>
+                        <div 
+                        ng-if = "item.event"
+                        class="div-name div-event light-color">
+                            {{item.event}}
+                        </div>
+                        <div 
+                        ng-if = "item.greenEvent"
+                        class="div-name div-event light-color color-green">
+                            {{item.greenEvent}}
+                        </div>
+
+                        <div 
+                        ng-if = "item.redEvent"
+                        class="div-name div-event light-color color-red">
+                            {{item.redEvent}}
+                        </div>
+
+                        <div 
+                        ng-if = "item.amberEvent"
+                        class="div-name div-event light-color color-amber">
+                            {{item.amberEvent}}
+                        </div>
                     </a>
                 </li>
             </ul>

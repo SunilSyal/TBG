@@ -1,0 +1,54 @@
+{
+  "siteList" : [
+  	{
+  		"img": "images/flipkart.png",
+  		"tgt": "http://www.google.com",
+  		"name": "Amazon"
+  	},
+  	{
+  		"img": "images/flipkart.png",
+  		"tgt": "http://www.google.com",
+  		"name": "Fashion and Something"
+  	},
+  	{
+  		"img": "images/flipkart.png",
+  		"tgt": "http://www.google.com",
+  		"name": "FlipKart"
+  	},{
+  		"img": "images/flipkart.png",
+  		"tgt": "http://www.google.com",
+  		"name": "Amazon"
+  	},
+  	{
+  		"img": "images/flipkart.png",
+  		"tgt": "http://www.google.com",
+  		"name": "Fashion and Something"
+  	},
+  	{
+  		"img": "images/flipkart.png",
+  		"tgt": "http://www.google.com",
+  		"name": "FlipKart"
+  	},{
+  		"img": "images/flipkart.png",
+  		"tgt": "http://www.google.com",
+  		"name": "Amazon"
+  	},
+  	{
+  		"img": "images/flipkart.png",
+  		"tgt": "http://www.google.com",
+  		"name": "Fashion and Something"
+  	},
+  	{
+  		"img": "images/flipkart.png",
+  		"tgt": "http://www.google.com",
+  		"name": "FlipKart"
+  	},
+  	{
+  		"img": "images/flipkart.png",
+  		"tgt": "http://www.google.com",
+  		"name": "FlipKart"
+  	}
+  ]
+}
+
+  

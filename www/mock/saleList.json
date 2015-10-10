@@ -1,0 +1,58 @@
+{
+  "saleList" : [
+  	{
+      "startDate":"Nov 18, 2015",
+      "endDate":"Nov 19, 2015",
+      "redEvent": "Sale",
+      "tgt": "http://www.amazon.com",
+      "name": "Amazon"
+    },
+    {
+      "startDate":"Nov 21, 2015",
+      "endDate":"Nov 22, 2015",
+      "greenEvent": "Sale",
+      "tgt": "http://www.amazon.com",
+      "name": "Amazon"
+    },
+    {
+      "startDate":"Nov 21, 2015",
+      "endDate":"Nov 22, 2015",
+      "amberEvent": "Sale",
+      "tgt": "http://www.amazon.com",
+      "name": "Amazon"
+    },
+    {
+      "endDate":"Mar 22, 2016",
+      "greenEvent": "Sale",
+      "tgt": "http://www.amazon.com",
+      "name": "ddddddddddd"
+    },
+    {
+      "endDate":"Mar 22, 2015",
+      "greenEvent": "Sale",
+      "tgt": "http://www.amazon.com",
+      "name": "ddddddddddd"
+    },
+    {
+      "startDate":"Mar 21, 2015",
+      "endDate":"Apr 22, 2015",
+      "greenEvent": "Sale",
+      "tgt": "http://www.amazon.com",
+      "name": "eeeeeeeeee"
+    },
+    {
+      "startDate":"Mar 21, 2015",
+      "endDate":"Apr 22, 2015",
+      "greenEvent": "Sale",
+      "tgt": "http://www.amazon.com",
+      "name": "eeeeeeeeee"
+    },
+    {
+      "startDate":"Mar 21, 2015",
+      "endDate":"Apr 22, 2015",
+      "greenEvent": "Sale",
+      "tgt": "http://www.amazon.com",
+      "name": "eeeeeeeeee"
+    }
+  ]
+}
