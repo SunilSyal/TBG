@@ -5,7 +5,7 @@ TBG.controller('tbg__main-ctrl', ['tbg__main_service' , function(tbg__main_servi
     self.name ="sunil";
 
     self.openWindow = function (link){
-    	window.open(link);
+    	navigator.app.loadUrl("http://google.com", {openExternal : true});
     }
 
     self.getSiteList = tbg__main_service.getSiteList;
