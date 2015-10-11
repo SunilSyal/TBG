@@ -5,9 +5,18 @@
       "id": "TST"
     },
     {
+      "title": "Baby Products",
+      "id": "BBY"
+    },
+    {
+      "title": "Electronic Products",
+      "id": "ELP"
+    },
+    {
       "title": "Fashion and Design",
       "id": "FND"
-    },{
+    },
+    {
       "title": "Books",
       "id": "BKS"
     }
@@ -15,67 +24,67 @@
 
   "siteList" : [
   	{
-      "cats" : "BKS,TST",
+      "cats" : "BKS,TST,FND",
       "img": "flipkart.png",
       "tgt": "http://www.flipkart.com/lenovo-k3-note/p/itmebygmmk8cfmy4?pid=MOBE8AHAT4SFH3PJ&affid=shalinita",
       "name": "Flipkart"
     },
     {
-  		"cats" : "BKS,TST",
+  		"cats" : "BKS,TST,FND",
       "img": "amazon.png",
   		"tgt": "http://www.amazon.in/b/ref=as_li_qf_br_sr_il_tl?_encoding=UTF8&camp=3626&creative=24790&linkCode=as2&node=976419031&tag=thebestgadget-21",
   		"name": "Amazon"
   	},
     {
-      "cats" : "BKS,TST",
+      "cats" : "BKS,TST,FND",
       "img": "snapdeal.png",
       "tgt": "http://www.snapdeal.com",
       "name": "SnapDeal"
     },
     {
-      "cats" : "BKS,TST",
+      "cats" : "FND",
       "img": "aaboli.jpg",
       "tgt": "http://www.aaboli.com/",
       "name": "Aaboli"
     },
     {
-      "cats" : "BKS,TST",
+      "cats" : "BBY",
       "img": "babyOye.png",
       "tgt": "http://www.babyoye.com/",
       "name": "BabyOye"
     },
     {
-      "cats" : "BKS,TST",
+      "cats" : "FND",
       "img": "biba.jpg",
       "tgt": "http://www.biba.in/",
       "name": "Biba"
     },
     {
-      "cats" : "BKS,TST",
+      "cats" : "TST,ELP",
       "img": "cromaRetail.jpeg",
       "tgt": "http://www.cromaretail.com/",
       "name": "Croma Retail"
     },
     {
-      "cats" : "BKS,TST",
+      "cats" : "ELP,TST,BKS",
       "img": "ebay.png",
       "tgt": "http://www.ebay.in/",
       "name": "ebay"
     },
     {
-      "cats" : "BKS,TST",
+      "cats" : "ELP,TST",
       "img": "emibazaar.jpeg",
       "tgt": "http://www.emibazaar.com/",
       "name": "EMIbazaar"
     },
     {
-      "cats" : "BKS,TST",
+      "cats" : "ELP,TST",
       "img": "eZoneOnline.png",
       "tgt": "http://www.ezoneonline.in/",
       "name": "eZoneOnline"
     },
     {
-      "cats" : "BKS,TST",
+      "cats" : "FND,TST",
       "img": "fabFurnish.jpg",
       "tgt": "http://www.fabfurnish.com/",
       "name": "FabFurnish"
@@ -93,25 +102,25 @@
       "name": "Fashionara"
     },
     {
-      "cats" : "TST",
+      "cats" : "TST,BBY",
       "img": "firstCry.jpg",
       "tgt": "http://www.firstcry.com/",
       "name": "FirstCry"
     },
     {
-      "cats" : "FND,TST",
+      "cats" : "FND,TST,ELP",
       "img": "homeShop18.png",
       "tgt": "http://www.homeshop18.com/",
       "name": "HomeShop 18"
     },
     {
-      "cats" : "TST",
+      "cats" : "TST,BKS,FND,ELP",
       "img": "indiaTimesShopping.jpg",
       "tgt": "http://shopping.indiatimes.com/",
       "name": "IndiaTimes Shopping"
     },
     {
-      "cats" : "BKS,TST",
+      "cats" : "ELP",
       "img": "infibeam.png",
       "tgt": "http://www.infibeam.com/",
       "name": "Infibeam"
@@ -129,49 +138,49 @@
       "name": "Koovs"
     },
     {
-      "cats" : "BKS,TST",
+      "cats" : "FND,TST",
       "img": "myntra.png",
       "tgt": "http://www.myntra.com/",
       "name": "Myntra"
     },
     {
-      "cats" : "BKS,TST",
+      "cats" : "ELP,TST,FND",
       "img": "naaptol.png",
       "tgt": "http://www.naaptol.com/",
       "name": "Naaptol"
     },
     {
-      "cats" : "BKS,TST",
+      "cats" : "FND,TST",
       "img": "nykaa.png",
       "tgt": "http://www.nykaa.com/",
       "name": "Nykaa"
     },
     {
-      "cats" : "BKS,TST",
+      "cats" : "FND,TST",
       "img": "pepperFry.jpg",
       "tgt": "http://www.pepperfry.com/",
       "name": "PepperFry"
     },
     {
-      "cats" : "BKS,TST",
+      "cats" : "BKS,TST,FND",
       "img": "shimply.png",
       "tgt": "http://www.shimply.com/",
       "name": "Shimply"
     },
     {
-      "cats" : "BKS,TST",
+      "cats" : "BKS,TST,BBY,FND,ELP",
       "img": "shopclues.jpg",
       "tgt": "http://www.shopclues.com/",
       "name": "Shopclues"
     },
     {
-      "cats" : "BKS,TST",
+      "cats" : "FND,TST",
       "img": "shopperStop.png",
       "tgt": "http://www.shoppersstop.com/",
       "name": "ShoppersStop"
     },
     {
-      "cats" : "BKS,TST",
+      "cats" : "FND,TST",
       "img": "yepMe.png",
       "tgt": "http://www.yepme.com/",
       "name": "YepMe"

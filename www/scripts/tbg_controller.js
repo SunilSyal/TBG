@@ -14,13 +14,14 @@ TBG.controller('tbg__main-ctrl', [ 'tbg_loader', 'tbg__main_service', function(t
 
     function init(){
     	setJsonPath();
-    	tbg_loader.loadFile(self.jsonPath + self.config.siteJsonListFileName, proceedSites);
-    	tbg_loader.loadFile(self.jsonPath + self.config.saleJsonListFileName, proceedSale);
+    	tbg_loader.loadFile(self.jsonPath + self.config.siteJsonListFileName + "?" + Date(), proceedSites);
+    	tbg_loader.loadFile(self.jsonPath + self.config.saleJsonListFileName + "?" + Date(), proceedSale);
     }
 
     function setJsonPath(){
     	self.jsonPath = self.config.isDev ? self.config.jsonPath : self.config.serverPath + self.config.jsonPath;
     	self.imagesPath = self.config.isDev ? self.config.imagesPath : self.config.serverPath + self.config.imagesPath;
+
     }
 
     function proceedSites(response){
