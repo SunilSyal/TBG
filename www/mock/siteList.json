@@ -1,38 +1,181 @@
 {
+  "catList" : [
+    {
+      "title": "Top Sites",
+      "id": "TST"
+    },
+    {
+      "title": "Fashion and Design",
+      "id": "FND"
+    },{
+      "title": "Books",
+      "id": "BKS"
+    }
+  ],
+
   "siteList" : [
   	{
-  		"img": "amazon.png",
-  		"tgt": "http://www.google.com",
-  		"name": "123RF"
-  	},
-  	{
-  		"img": "flipkart.png",
-  		"tgt": "http://www.google.com",
-  		"name": "Fashion and Something"
-  	},
-  	{
-  		"img": "flipkart.png",
-  		"tgt": "http://www.google.com",
-  		"name": "FlipKart"
-  	},{
-  		"img": "flipkart.png",
-  		"tgt": "http://www.google.com",
+      "cats" : "BKS,TST",
+      "img": "flipkart.png",
+      "tgt": "http://www.flipkart.com/lenovo-k3-note/p/itmebygmmk8cfmy4?pid=MOBE8AHAT4SFH3PJ&affid=shalinita",
+      "name": "Flipkart"
+    },
+    {
+  		"cats" : "BKS,TST",
+      "img": "amazon.png",
+  		"tgt": "http://www.amazon.in/b/ref=as_li_qf_br_sr_il_tl?_encoding=UTF8&camp=3626&creative=24790&linkCode=as2&node=976419031&tag=thebestgadget-21",
   		"name": "Amazon"
   	},
-  	{
-  		"img": "flipkart.png",
-  		"tgt": "http://www.google.com",
-  		"name": "Fashion and Something"
-  	},
-  	{
-  		"img": "flipkart.png",
-  		"tgt": "http://www.google.com",
-  		"name": "FlipKart"
-  	},{
-  		"img": "flipkart.png",
-  		"tgt": "http://www.google.com",
-  		"name": "Amazon"
-  	}
+    {
+      "cats" : "BKS,TST",
+      "img": "snapdeal.png",
+      "tgt": "http://www.snapdeal.com",
+      "name": "SnapDeal"
+    },
+    {
+      "cats" : "BKS,TST",
+      "img": "aaboli.jpg",
+      "tgt": "http://www.aaboli.com/",
+      "name": "Aaboli"
+    },
+    {
+      "cats" : "BKS,TST",
+      "img": "babyOye.png",
+      "tgt": "http://www.babyoye.com/",
+      "name": "BabyOye"
+    },
+    {
+      "cats" : "BKS,TST",
+      "img": "biba.jpg",
+      "tgt": "http://www.biba.in/",
+      "name": "Biba"
+    },
+    {
+      "cats" : "BKS,TST",
+      "img": "cromaRetail.jpeg",
+      "tgt": "http://www.cromaretail.com/",
+      "name": "Croma Retail"
+    },
+    {
+      "cats" : "BKS,TST",
+      "img": "ebay.png",
+      "tgt": "http://www.ebay.in/",
+      "name": "ebay"
+    },
+    {
+      "cats" : "BKS,TST",
+      "img": "emibazaar.jpeg",
+      "tgt": "http://www.emibazaar.com/",
+      "name": "EMIbazaar"
+    },
+    {
+      "cats" : "BKS,TST",
+      "img": "eZoneOnline.png",
+      "tgt": "http://www.ezoneonline.in/",
+      "name": "eZoneOnline"
+    },
+    {
+      "cats" : "BKS,TST",
+      "img": "fabFurnish.jpg",
+      "tgt": "http://www.fabfurnish.com/",
+      "name": "FabFurnish"
+    },
+    {
+      "cats" : "FND,TST",
+      "img": "fashionAndYou.png",
+      "tgt": "http://www.fashionandyou.com/",
+      "name": "Fashion & You"
+    },
+    {
+      "cats" : "FND,TST",
+      "img": "fashionara.png",
+      "tgt": "http://www.fashionara.com/",
+      "name": "Fashionara"
+    },
+    {
+      "cats" : "TST",
+      "img": "firstCry.jpg",
+      "tgt": "http://www.firstcry.com/",
+      "name": "FirstCry"
+    },
+    {
+      "cats" : "FND,TST",
+      "img": "homeShop18.png",
+      "tgt": "http://www.homeshop18.com/",
+      "name": "HomeShop 18"
+    },
+    {
+      "cats" : "TST",
+      "img": "indiaTimesShopping.jpg",
+      "tgt": "http://shopping.indiatimes.com/",
+      "name": "IndiaTimes Shopping"
+    },
+    {
+      "cats" : "BKS,TST",
+      "img": "infibeam.png",
+      "tgt": "http://www.infibeam.com/",
+      "name": "Infibeam"
+    },
+    {
+      "cats" : "FND,TST",
+      "img": "jabong.png",
+      "tgt": "http://www.jabong.com/",
+      "name": "Jabong"
+    },
+    {
+      "cats" : "FND,TST",
+      "img": "koovs.png",
+      "tgt": "http://www.koovs.com/",
+      "name": "Koovs"
+    },
+    {
+      "cats" : "BKS,TST",
+      "img": "myntra.png",
+      "tgt": "http://www.myntra.com/",
+      "name": "Myntra"
+    },
+    {
+      "cats" : "BKS,TST",
+      "img": "naaptol.png",
+      "tgt": "http://www.naaptol.com/",
+      "name": "Naaptol"
+    },
+    {
+      "cats" : "BKS,TST",
+      "img": "nykaa.png",
+      "tgt": "http://www.nykaa.com/",
+      "name": "Nykaa"
+    },
+    {
+      "cats" : "BKS,TST",
+      "img": "pepperFry.jpg",
+      "tgt": "http://www.pepperfry.com/",
+      "name": "PepperFry"
+    },
+    {
+      "cats" : "BKS,TST",
+      "img": "shimply.png",
+      "tgt": "http://www.shimply.com/",
+      "name": "Shimply"
+    },
+    {
+      "cats" : "BKS,TST",
+      "img": "shopclues.jpg",
+      "tgt": "http://www.shopclues.com/",
+      "name": "Shopclues"
+    },
+    {
+      "cats" : "BKS,TST",
+      "img": "shopperStop.png",
+      "tgt": "http://www.shoppersstop.com/",
+      "name": "ShoppersStop"
+    },
+    {
+      "cats" : "BKS,TST",
+      "img": "yepMe.png",
+      "tgt": "http://www.yepme.com/",
+      "name": "YepMe"
+    }
   ]
 }
 

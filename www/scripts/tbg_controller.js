@@ -4,7 +4,7 @@ TBG.controller('tbg__main-ctrl', [ 'tbg_loader', 'tbg__main_service', function(t
     var self = this;
 
     self.config = {
-    	isDev : false,
+    	isDev : true,
     	jsonPath : 'mock/',
     	imagesPath : 'images/',
     	serverPath : 'http://thebestgadget.com/TBG/',
@@ -38,11 +38,18 @@ TBG.controller('tbg__main-ctrl', [ 'tbg_loader', 'tbg__main_service', function(t
     	navigator.app ? navigator.app.loadUrl(link, {openExternal : true}) : window.open(link);
     }
 
+    self.refresh = function (){
+    	tbg__main_service.clean();
+    	init();
+    }
+
     self.breadcrumb = "Top Shopping Sites"
 
     self.getSiteList = tbg__main_service.getSiteList;
 
     self.getSaleList = tbg__main_service.getSaleList;
+
+    self.catList = tbg__main_service.getCatList;
 
     init();
 }]);
@@ -57,6 +64,10 @@ TBG.factory('tbg__main_service', function() {
 
   function getSaleList(){
   	return objRef.saleList;
+  }
+
+  function getCatList(){
+  	return objRef.catList;
   }
 
   function addObject(obj, dataType, path){
@@ -75,13 +86,16 @@ TBG.factory('tbg__main_service', function() {
   }
 
   function setPaths(path){
-  	console.log(path)
   	var len =  objRef.siteList.length;
 
   	for(var i=0; i< len; i++){
   		var ref = objRef.siteList[i];
   		ref.img = path + ref.img;
   	}
+  }
+
+  function clean(){
+  		objRef = {};
   }
 
   function setDate(){
@@ -102,7 +116,9 @@ TBG.factory('tbg__main_service', function() {
   return {
   	getSiteList: getSiteList,
   	getSaleList : getSaleList,
-  	addObject : addObject
+  	addObject : addObject,
+  	getCatList : getCatList,
+  	clean : clean
   };
 });
 

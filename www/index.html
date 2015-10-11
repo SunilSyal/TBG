@@ -9,28 +9,51 @@
 
 <body ng-app="TBG" ng-controller="tbg__main-ctrl as ctrl">
     <header>
+
+        
         <img class="logo" src="images/logo.png"/>
 
-        <p class="breadcrumb dark-background" ng-bind="ctrl.breadcrumb"></p>
-    </header>
+        <p class="breadcrumb dark-background">
+
+        <select class="dark-background no-border" ng-model="ctrl.breadcrumb" ng-init="ctrl.breadcrumb = 'TST' ">
+            <option
+                class="light-color div-name standard-option"
+                ng-repeat="option in ctrl.catList()"
+                value="{{option.id}}">
+                {{option.title}}
+            </option>
+        </select>
+</p>
 
     <main>
             <ul class='site-list'>
-                <li ng-repeat="item in ctrl.getSiteList()">
+                <li class="clickable" ng-repeat="item in ctrl.getSiteList()" ng-if="item.cats.indexOf(ctrl.breadcrumb)!=-1">
                     <a 
                     ng-click="ctrl.openWindow(item.tgt)"
                     href="javascript:void(0)">
                         <img src="{{item.img}}" alt="{{item.name}}">
                         <p>{{item.name}}</p>
+
+                        
+
                     </a>
                 </li>
             </ul>
     </main>
 
+
+
     <footer class="full-width dark-background">
+
+        <div 
+            class="refresh light-background simple-shadow"
+            ng-click = "ctrl.refresh()">
+            <img src="images/refresh.png" />
+        </div>
+
         <p>Events and Sales</p>
         <ul class='sale-list full-width small-font'>
-                <li ng-repeat="item in ctrl.getSaleList() | orderBy:'Date(endDate)'" ng-if="item.date">
+                <li class="clickable" ng-repeat="item in ctrl.getSaleList() | orderBy:'Date(endDate)'" ng-if="item.date">
                     <a 
                     ng-click="ctrl.openWindow(item.tgt)"
                     href="javascript:void(0)">
