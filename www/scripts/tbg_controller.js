@@ -4,7 +4,7 @@ TBG.controller('tbg__main-ctrl', [ 'tbg_loader', 'tbg__main_service', function(t
     var self = this;
 
     self.config = {
-    	isDev : true,
+    	isDev : false,
     	jsonPath : 'mock/',
     	imagesPath : 'images/',
     	serverPath : 'http://thebestgadget.com/TBG/',
