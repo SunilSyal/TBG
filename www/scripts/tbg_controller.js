@@ -106,7 +106,7 @@ TBG.factory('tbg__main_service', function() {
   	for(var i=0; i< len; i++){
   		var ref = objRef.saleList[i];
 
-  		if(Date.parse(ref.endDate) < today) {
+  		if(Date.parse(ref.endDate) + 86400000 < today) {
   			objRef.saleList[i].date = false;
   		}else{
   			ref.date = ref.startDate ? ref.startDate.split(",")[0] + " - " + ref.endDate.split(",")[0] : ref.endDate.split(",")[0];
